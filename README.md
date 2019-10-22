@@ -16,4 +16,4 @@ Varje sökväg pekar mot src-katalogen, där alla filer som redigeras i projekte
 
 **Systemet startas genom att anropa Gulp i terminalen ståendes i projektets mapp.** 
 
-
+Länk till färdig plats: http://studenter.miun.se/~allu1801/dt173g/moment5/fetchapi/
