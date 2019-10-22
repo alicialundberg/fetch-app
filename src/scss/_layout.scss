@@ -1,0 +1,100 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@import "mixins";
+
+$header-font: 'Ubuntu', sans-serif;
+$body-font: 'Montserrat', sans-serif;
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $body-font;
+  background: #6d7c8c;
+}
+
+#courses {
+    background: #c8ced4;
+    width: 45%;
+    margin: 3%;
+    padding: 2%;
+    border: 2px solid black;
+    @include breakpoint(phone) {
+      width: 94%;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    font-family: $header-font;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 1%;
+  }
+  
+  h2 {
+    margin-top: 3%;
+    padding-left: 18%;
+    @include breakpoint(phone) {
+      text-align: center;
+      padding: 0;
+    }
+  }
+  
+  #course-form {
+    width: 70%;
+    font-size: 16px;
+    background: #495C70;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #53687E;
+    margin: 0 15%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    @include breakpoint(phone) {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    }
+  
+    input {
+      &[type=text] {
+        width: 20%;
+        outline: none;
+        padding: 1%;
+        margin-right: 1%;
+        font-size: 15px;
+        @include breakpoint(phone) {
+          width: 100%;
+          margin-bottom: 1%;
+        }
+  
+        &:focus {
+          border: 2px solid yellow;
+        }
+      }
+  
+      &[type=submit] {
+        background: #576E86;
+        border: none;
+        padding: 10px 12px 10px 12px;
+        margin-left: 2%;
+        border-radius: 5px;
+        @include breakpoint(phone) {
+          margin: 0;
+        }
+  
+        &:hover {
+          background: yellow;
+        }
+      }
+    }
