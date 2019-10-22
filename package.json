@@ -15,11 +15,8 @@
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^6.1.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify-es": "^1.0.4",
-    "gulp-uglifycss": "^1.1.0",
     "node-sass": "^4.12.0"
   }
 }
